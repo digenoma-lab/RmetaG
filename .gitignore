@@ -1,0 +1,45 @@
+# Nextflow execution state and reports
+.nextflow/
+.nextflow.log*
+/work/
+/results/
+/tests/results*/
+/nf-tower.yml
+/nf-tower.yaml
+
+# Local references and sample data; tiny stub fixtures remain versioned
+/data/
+/databases/
+/references/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.syldb
+*.syl2db
+*.sylsp
+*.dmnd
+*.bt2
+*.bt2l
+*.k2d
+!tests/data/*.fastq.gz
+!tests/db/**/*.syldb
+!tests/db/**/*.dmnd
+
+# Download and index intermediates
+*.part
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+# Local secrets and editor/OS files
+.env
+.env.*
+!.env.example
+.DS_Store
+.vscode/
+.idea/
